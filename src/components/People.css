@@ -1,0 +1,41 @@
+.people-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.people-item .details{
+    width: 100%;
+}
+
+.people-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.people-item .logo {
+    border-radius: 400px;
+    width: 9%;
+    text-align: center;
+    background-color: #548235;
+
+}
+
+.people-item .btn-grp {
+    display: flex;
+    flex-direction: row;
+}
+
+.people-item .logo h1 {
+    color: white;
+}
+
+.people-item:hover h4, .people-item:hover h5 {
+    color: rgba(0, 123, 255, 0.834);
+}
+
+.people-item:hover .logo h1, .people-item:hover .logo {
+    color: rgba(0, 123, 255, 0.834);
+    background-color: white;
+}
+

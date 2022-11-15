@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {Routes, Route} from 'react-router-dom';
+import AddPerson from './Pages/AddPerson';
+import EditPeople from './Pages/EditPeople';
+import FriendsList from './Pages/FriendsList';
+import PeoplesList from './Pages/PeoplesList';
+import PersonDetails from './Pages/PersonDetails';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='main-container'>
+        <Routes>
+          <Route path='/' element={ <PeoplesList/> }/>
+          <Route path='/persondetails/:id' element={ <PersonDetails/>}/>
+          <Route path='/friendslist/:id' element={<FriendsList />} />
+          <Route path='/add' element={<AddPerson />} />
+          <Route path='/edit/:id' element={<EditPeople />}/>
+        </Routes>
+      </div>
     </div>
   );
 }

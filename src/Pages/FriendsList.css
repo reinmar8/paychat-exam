@@ -1,0 +1,12 @@
+.friends-list-container ul {
+    padding: 1rem;
+    list-style: none;
+}
+
+.friends-list-container li {
+    margin-bottom: .5rem;
+}
+
+.friends-list-container h3 {
+    text-align: center;
+}
